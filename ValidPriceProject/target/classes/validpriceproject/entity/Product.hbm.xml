@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 28, 2016 12:20:37 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="validpriceproject.entity.Product" table="product" schema="prices" optimistic-lock="version">
+        <id name="barcode" type="long">
+            <column name="barcode" precision="12" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="pid" type="int">
+            <column name="pid" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="80" not-null="true" />
+        </property>
+        <property name="currentPrice" type="big_decimal">
+            <column name="current_price" precision="5" not-null="true" />
+        </property>
+        <property name="previousPrice" type="big_decimal">
+            <column name="previous_price" precision="5" not-null="true" />
+        </property>
+        <property name="balance" type="short">
+            <column name="balance" precision="3" scale="0" not-null="true" />
+        </property>
+        <property name="modificationDate" type="date">
+            <column name="modification_date" length="13" />
+        </property>
+        <property name="ledId" type="long">
+            <column name="led_id" precision="15" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

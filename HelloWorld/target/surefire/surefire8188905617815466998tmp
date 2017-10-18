@@ -1,0 +1,8 @@
+#surefire
+#Sat Mar 04 21:28:14 EET 2017
+maven.ext.class.path=C\:\\Program Files\\NetBeans 8.2\\java\\maven-nblib\\netbeans-eventspy.jar
+user.dir=C\:\\Users\\makis\\Documents\\NetBeansProjects\\HelloWorld
+file.encoding=UTF-8
+localRepository=C\:\\Users\\makis\\.m2\\repository
+netbeans.deploy=true
+basedir=C\:\\Users\\makis\\Documents\\NetBeansProjects\\HelloWorld
