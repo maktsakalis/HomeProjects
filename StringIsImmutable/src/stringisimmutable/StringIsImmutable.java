@@ -20,7 +20,7 @@ public class StringIsImmutable {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        String a = "abc";
+        String a = "abcd";
         String b = a.toUpperCase();
         
         //this will not change a string since strings are immutable
